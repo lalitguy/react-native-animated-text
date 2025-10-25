@@ -53,12 +53,11 @@ interface SpringTextProps
 // Common AnimatedText Config Types
 
 interface AnimatedTextConfig extends AnimationTiming {
-  fromOpacity?: number;
-  toOpacity?: number;
+  opacity?: number;
 }
 
 interface TextAnimations {
-  config?: AnimatedTextConfig;
+  config: AnimatedTextConfig | AnimatedTextConfig[];
 }
 
 interface AnimatedTextHookProps extends TextAnimations {

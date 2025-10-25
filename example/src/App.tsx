@@ -11,7 +11,36 @@ export default function App() {
       <RotateText text="Rotate Animation is Awesome!✨" />
       <SpringText text="Spring Animation is Awesome!✨" /> */}
 
-      <AnimatedText text="Animated Text is Awesome!✨" reanimateOnTextChange />
+      <AnimatedText
+        text="123456789✨1234567891"
+        reanimateOnTextChange
+        config={[
+          {
+            offsetX: 10,
+            offsetY: 10,
+            opacity: 0,
+            staggerDelay: 50,
+            delay: 0,
+            duration: 300,
+          },
+          {
+            offsetX: 10,
+            offsetY: 0,
+            opacity: 1,
+            staggerDelay: 0,
+            delay: 10,
+            duration: 200,
+          },
+          {
+            offsetX: 0,
+            offsetY: 0,
+            opacity: 1,
+            staggerDelay: 0,
+            delay: 0,
+            duration: 1,
+          },
+        ]}
+      />
 
       {/* <Animated.Text>njo</Animated.Text> */}
     </View>
